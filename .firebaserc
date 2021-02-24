@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "miklnetwork-7ef43": {
+      "hosting": {
+        "MiklNetwork": [
+          "miklnetwork-7ef43"
+        ]
+      }
+    }
+  }
+}

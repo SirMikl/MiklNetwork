@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div class="login-container">
+  <header class="login_header">
+    <div class="login_header_left">
+      <img src="../../../assets/logo-social.png" height="630" width="1200" alt="logo"/>
+      <h2>Mikl's network</h2>
+    </div>
+    <div class="login_header_right">
+      <mat-card class="login_header_right_card">
+        <mat-card-content>
+        <form #form="ngForm" class="login_form" (ngSubmit)="login(form)" )>
+          <label>
+            <input type="text" name="email" ngModel placeholder="email" required>
+          </label>
+          <label>
+            <input type="password" name="password" ngModel placeholder="password" required>
+          </label>
+          <button type="submit" class="login-button" [disabled]="form.invalid || form.pending" ]></button>
+        </form>
+          <a href="#">Forget account</a>
+          <button class="create-account" (click)="openRegister()">Create account</button>
+        </mat-card-content>
+      </mat-card>
+      <p class="tagline">Create a page</p>
+    </div>
+  </header>
+
+
+</div>
